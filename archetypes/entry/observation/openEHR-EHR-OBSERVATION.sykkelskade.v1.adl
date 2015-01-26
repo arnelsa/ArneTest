@@ -17,7 +17,7 @@ description
 	original_author = <
 		["name"] = <"Bjørn Næss">
 		["organisation"] = <"DIPS ASA">
-		["email"] = <"bna@dips.no">
+		["email"] = <"asa@dips.no">
 		["date"] = <"2015-01-26">
 	>
 	details = <
@@ -31,8 +31,8 @@ description
 		["nb"] = <
 			language = <[ISO_639-1::nb]>
 			purpose = <"For dybdestudie av sykkelskader">
-			use = <"">
-			misuse = <"">
+			use = <"Bruk for test ">
+			misuse = <"Ikke bruk i prod">
 			copyright = <"">
 		>
 	>
