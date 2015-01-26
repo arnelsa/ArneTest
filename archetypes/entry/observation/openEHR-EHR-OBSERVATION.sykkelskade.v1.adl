@@ -36,11 +36,7 @@ description
 	lifecycle_state = <"0">
 	other_contributors = <>
 	other_details = <
-<<<<<<< HEAD
 		["MD5-CAM-1.0.1"] = <"CC35D2D643F8F72EC8E5FA856EFB9967">
-=======
-		["MD5-CAM-1.0.1"] = <"5186EA12B5EE91F01E744523A925952B">
->>>>>>> origin/master
 	>
 
 definition
@@ -540,11 +536,7 @@ ontology
 					description = <"*">
 				>
 				["at0084"] = <
-<<<<<<< HEAD
-					text = <"*Ny boks(nb)">
-=======
 					text = <"*Test for merge(nb)">
->>>>>>> origin/master
 					description = <"**(nb)">
 				>
 			>
@@ -816,11 +808,7 @@ ontology
 					description = <"*">
 				>
 				["at0084"] = <
-<<<<<<< HEAD
-					text = <"Ny boks">
-=======
 					text = <"Test for merge">
->>>>>>> origin/master
 					description = <"*">
 				>
 			>
