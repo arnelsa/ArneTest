@@ -36,7 +36,7 @@ description
 	lifecycle_state = <"0">
 	other_contributors = <>
 	other_details = <
-		["MD5-CAM-1.0.1"] = <"5C78C53C713B1E75E2C91F3F0A694452">
+		["MD5-CAM-1.0.1"] = <"5186EA12B5EE91F01E744523A925952B">
 	>
 
 definition
@@ -64,7 +64,8 @@ definition
 													at0013, 	-- Sti/offroad
 													at0014, 	-- Boligområde
 													at0015, 	-- Park
-													at0016]	-- Annet
+													at0016, 	-- Annet
+													at0084]	-- Test for merge
 												}
 											}
 										}
@@ -527,6 +528,10 @@ ontology
 					text = <"Inntak av alkohol eller annet rusmiddel?">
 					description = <"*">
 				>
+				["at0084"] = <
+					text = <"*Test for merge(nb)">
+					description = <"**(nb)">
+				>
 			>
 		>
 		["nb"] = <
@@ -793,6 +798,10 @@ ontology
 				>
 				["at0083"] = <
 					text = <"Inntak av alkohol eller annet rusmiddel?">
+					description = <"*">
+				>
+				["at0084"] = <
+					text = <"Test for merge">
 					description = <"*">
 				>
 			>
