@@ -1,0 +1,86 @@
+archetype (adl_version=1.4)
+    openEHR-EHR-EVALUATION.skadested.v1
+
+concept
+    [at0000]
+
+language
+    original_language = <[ISO_639-1::nb]>
+
+description
+    original_author = <
+        ["name"] = <"">
+    >
+    lifecycle_state = <"0">
+    details = <
+        ["nb"] = <
+            language = <[ISO_639-1::nb]>
+            purpose = <"Angir hvor på kroppen skaden er lokalisert ">
+        >
+        ["no"] = <
+            language = <[ISO_639-1::no]>
+            purpose = <"Angir hvor på kroppen skaden er lokalisert ">
+        >
+    >
+
+definition
+    EVALUATION[at0000] matches {
+        data matches {
+            ITEM_TREE[at0001] matches {
+                items cardinality matches {0..*; unordered} matches {
+                    allow_archetype CLUSTER[at0003] occurrences matches {0..*} matches {
+                        include
+                            archetype_id/value matches {/.*/}
+                    }
+                }
+            }
+        }
+    }
+
+ontology
+    term_definitions = <
+        ["no"] = <
+            items = <
+                ["at0000"] = <
+                    text = <"Skadested">
+                    description = <"Angir hvor på kroppen skaden finnes ">
+
+                >
+                ["at0001"] = <
+                    text = <"Tree">
+                    description = <"@ internal @">
+
+                >
+                ["at0003"] = <
+                    text = <"Cluster">
+                    description = <"*">
+
+                >
+            >
+        >
+        ["nb"] = <
+            items = <
+                ["at0000"] = <
+                    text = <"Skadested">
+                    description = <"Angir hvor på kroppen skaden finnes ">
+
+                >
+                ["at0001"] = <
+                    text = <"Tree">
+                    description = <"@ internal @">
+
+                >
+                ["at0003"] = <
+                    text = <"Cluster">
+                    description = <"*">
+
+                >
+            >
+        >
+    >
+    constraint_definitions = <
+    >
+    term_binding = <
+    >
+    constraint_binding = <
+    >

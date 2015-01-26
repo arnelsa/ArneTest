@@ -1,0 +1,103 @@
+<?xml version="1.0"?>
+<template xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="openEHR/v1/Template">
+  <id>ddb6b6c8-0bf4-4d9e-96f3-d4d8a8b1ed9f</id>
+  <name>SykkelskadeObservationTemplate</name>
+  <description>
+    <lifecycle_state>Initial</lifecycle_state>
+    <details>
+      <purpose />
+      <use />
+      <misuse />
+    </details>
+    <other_details>
+      <item>
+        <key>MetaDataSet:Sample Set </key>
+        <value>Template metadata sample set </value>
+      </item>
+      <item>
+        <key>Acknowledgements</key>
+        <value />
+      </item>
+      <item>
+        <key>Business Process Level</key>
+        <value />
+      </item>
+      <item>
+        <key>Care setting</key>
+        <value />
+      </item>
+      <item>
+        <key>Client group</key>
+        <value />
+      </item>
+      <item>
+        <key>Clinical Record Element</key>
+        <value />
+      </item>
+      <item>
+        <key>Copyright</key>
+        <value />
+      </item>
+      <item>
+        <key>Issues</key>
+        <value />
+      </item>
+      <item>
+        <key>Owner</key>
+        <value />
+      </item>
+      <item>
+        <key>Sign off</key>
+        <value />
+      </item>
+      <item>
+        <key>Speciality</key>
+        <value />
+      </item>
+      <item>
+        <key>User roles</key>
+        <value />
+      </item>
+    </other_details>
+  </description>
+  <definition xsi:type="OBSERVATION" archetype_id="openEHR-EHR-OBSERVATION.sykkelskade.v1" concept_name="Sykkelskade">
+    <Rule path="/data[at0001]" hide_on_form="true" />
+    <Rule path="/data[at0001]/events[at0002]" hide_on_form="true" />
+    <Rule path="/data[at0001]/events[at0002]/data[at0003]" hide_on_form="true" />
+    <Rule path="/data[at0001]/events[at0002]/data[at0003]/items[at0064]">
+      <constraint xsi:type="textConstraint">
+        <includedValues>Oslo</includedValues>
+        <includedValues>Utenbys</includedValues>
+        <includedValues>Utlandet</includedValues>
+      </constraint>
+    </Rule>
+    <Rule path="/data[at0001]/events[at0002]/data[at0003]/items[at0068]/items[at0019]">
+      <constraint xsi:type="textConstraint" limitToList="false">
+        <includedValues>Bråbrems</includedValues>
+        <includedValues>Avverge/svingte unna</includedValues>
+        <includedValues>Skled</includedValues>
+        <includedValues>Traff fortauskant</includedValues>
+        <includedValues>Hull i asfalt</includedValues>
+        <includedValues>Trikkeskinne</includedValues>
+        <includedValues>Traff annen hindring</includedValues>
+        <includedValues>Mistet styringen/balansen</includedValues>
+        <includedValues>Annet</includedValues>
+      </constraint>
+    </Rule>
+    <Rule path="/data[at0001]/events[at0002]/data[at0003]/items[at0068]/items[at0020]">
+      <constraint xsi:type="textConstraint" limitToList="false">
+        <includedValues>Bil</includedValues>
+        <includedValues>Annen syklist</includedValues>
+        <includedValues>Fotgjenger</includedValues>
+        <includedValues>Annet</includedValues>
+      </constraint>
+    </Rule>
+    <Rule path="/data[at0001]/events[at0002]/state[at0081]" name="Om føreren" />
+    <Rule path="/data[at0001]/events[at0002]/state[at0081]/items[at0082]">
+      <constraint xsi:type="textConstraint">
+        <includedValues>Av og til</includedValues>
+        <includedValues>Daglig</includedValues>
+      </constraint>
+    </Rule>
+  </definition>
+</template>

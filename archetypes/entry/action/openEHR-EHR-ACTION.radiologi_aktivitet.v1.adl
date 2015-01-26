@@ -1,0 +1,424 @@
+archetype (adl_version=1.4)
+    openEHR-EHR-ACTION.radiologi_aktivitet.v1
+
+concept
+    [at0000]
+
+language
+    original_language = <[ISO_639-1::nb]>
+    translations = <
+        ["no"] = <
+            language = <[ISO_639-1::no]>
+            author = <
+                ["name"] = <"?">
+            >
+        >
+    >
+
+description
+    original_author = <
+        ["email"] = <"bna@dips.no">
+        ["organisation"] = <"DIPS ASA">
+        ["name"] = <"Bjørn Næss">
+        ["date"] = <"2013-08-15">
+    >
+    lifecycle_state = <"0">
+    details = <
+        ["nb"] = <
+            language = <[ISO_639-1::nb]>
+            purpose = <"Dokumentasjon av radiologi aktivitet ved Skadelegevakt">
+            use = <"Dokumentasjon av radiologi aktivitet ved Skadelegevakt">
+            misuse = <"Generell radiologi dokumentasjon">
+        >
+        ["no"] = <
+            language = <[ISO_639-1::no]>
+            purpose = <"Dokumentasjon av radiologi aktivitet ved Skadelegevakt">
+            use = <"Dokumentasjon av radiologi aktivitet ved Skadelegevakt">
+            misuse = <"Generell radiologi dokumentasjon">
+        >
+    >
+
+definition
+    ACTION[at0000] matches {
+        ism_transition matches {
+            ISM_TRANSITION[at0006] matches {
+                current_state matches {
+                    DV_CODED_TEXT matches {
+                        defining_code matches {
+                            [openehr::526]
+                        }
+                    }
+                }
+                careflow_step matches {
+                    DV_CODED_TEXT matches {
+                        defining_code matches {
+                            [local::at0006]
+                        }
+                    }
+                }
+            }
+            ISM_TRANSITION[at0007] matches {
+                current_state matches {
+                    DV_CODED_TEXT matches {
+                        defining_code matches {
+                            [openehr::527]
+                        }
+                    }
+                }
+                careflow_step matches {
+                    DV_CODED_TEXT matches {
+                        defining_code matches {
+                            [local::at0007]
+                        }
+                    }
+                }
+            }
+            ISM_TRANSITION[at0008] matches {
+                current_state matches {
+                    DV_CODED_TEXT matches {
+                        defining_code matches {
+                            [openehr::528]
+                        }
+                    }
+                }
+                careflow_step matches {
+                    DV_CODED_TEXT matches {
+                        defining_code matches {
+                            [local::at0008]
+                        }
+                    }
+                }
+            }
+            ISM_TRANSITION[at0010] matches {
+                current_state matches {
+                    DV_CODED_TEXT matches {
+                        defining_code matches {
+                            [openehr::245]
+                        }
+                    }
+                }
+                careflow_step matches {
+                    DV_CODED_TEXT matches {
+                        defining_code matches {
+                            [local::at0010]
+                        }
+                    }
+                }
+            }
+            ISM_TRANSITION[at0011] matches {
+                current_state matches {
+                    DV_CODED_TEXT matches {
+                        defining_code matches {
+                            [openehr::245]
+                        }
+                    }
+                }
+                careflow_step matches {
+                    DV_CODED_TEXT matches {
+                        defining_code matches {
+                            [local::at0011]
+                        }
+                    }
+                }
+            }
+            ISM_TRANSITION[at0012] matches {
+                current_state matches {
+                    DV_CODED_TEXT matches {
+                        defining_code matches {
+                            [openehr::245]
+                        }
+                    }
+                }
+                careflow_step matches {
+                    DV_CODED_TEXT matches {
+                        defining_code matches {
+                            [local::at0012]
+                        }
+                    }
+                }
+            }
+            ISM_TRANSITION[at0013] matches {
+                current_state matches {
+                    DV_CODED_TEXT matches {
+                        defining_code matches {
+                            [openehr::245]
+                        }
+                    }
+                }
+                careflow_step matches {
+                    DV_CODED_TEXT matches {
+                        defining_code matches {
+                            [local::at0013]
+                        }
+                    }
+                }
+            }
+            ISM_TRANSITION[at0014] matches {
+                current_state matches {
+                    DV_CODED_TEXT matches {
+                        defining_code matches {
+                            [openehr::245]
+                        }
+                    }
+                }
+                careflow_step matches {
+                    DV_CODED_TEXT matches {
+                        defining_code matches {
+                            [local::at0014]
+                        }
+                    }
+                }
+            }
+            ISM_TRANSITION[at0009] matches {
+                current_state matches {
+                    DV_CODED_TEXT matches {
+                        defining_code matches {
+                            [openehr::531]
+                        }
+                    }
+                }
+                careflow_step matches {
+                    DV_CODED_TEXT matches {
+                        defining_code matches {
+                            [local::at0009]
+                        }
+                    }
+                }
+            }
+            ISM_TRANSITION[at0015] matches {
+                current_state matches {
+                    DV_CODED_TEXT matches {
+                        defining_code matches {
+                            [openehr::532]
+                        }
+                    }
+                }
+                careflow_step matches {
+                    DV_CODED_TEXT matches {
+                        defining_code matches {
+                            [local::at0015]
+                        }
+                    }
+                }
+            }
+        }
+        description matches {
+            ITEM_TREE[at0001] matches {
+                items cardinality matches {0..*; unordered} matches {
+                    ELEMENT[at0002] occurrences matches {0..1} matches {
+                        value matches {
+                            DV_TEXT matches {*}
+                        }
+                    }
+                    ELEMENT[at0003] occurrences matches {0..1} matches {
+                        value matches {
+                            DV_TEXT matches {*}
+                        }
+                    }
+                    ELEMENT[at0004] occurrences matches {0..1} matches {
+                        value matches {
+                            DV_DATE_TIME matches {*}
+                        }
+                    }
+                    ELEMENT[at0005] occurrences matches {0..1} matches {
+                        value matches {
+                            DV_DATE_TIME matches {*}
+                        }
+                    }
+                    ELEMENT[at0016] occurrences matches {0..1} matches {
+                        value matches {
+                            DV_TEXT matches {*}
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+ontology
+    term_definitions = <
+        ["no"] = <
+            items = <
+                ["at0000"] = <
+                    text = <"Radiologi aktivitet">
+                    description = <"Dokumentasjon av radiologi aktivitet ved Skadelegevakt">
+
+                >
+                ["at0001"] = <
+                    text = <"Tree">
+                    description = <"@ internal @">
+
+                >
+                ["at0002"] = <
+                    text = <"Kliniske opplysninger">
+                    description = <"*">
+
+                >
+                ["at0003"] = <
+                    text = <"Prosedyre">
+                    description = <"*">
+
+                >
+                ["at0004"] = <
+                    text = <"Utført tid">
+                    description = <"*">
+
+                >
+                ["at0005"] = <
+                    text = <"Ønsket tid">
+                    description = <"*">
+
+                >
+                ["at0006"] = <
+                    text = <"Planlagt">
+                    description = <"*">
+
+                >
+                ["at0007"] = <
+                    text = <"Utsatt">
+                    description = <"*">
+
+                >
+                ["at0008"] = <
+                    text = <"Kansellert">
+                    description = <"*">
+
+                >
+                ["at0009"] = <
+                    text = <"Avbrutt">
+                    description = <"*">
+
+                >
+                ["at0010"] = <
+                    text = <"Påbegynt">
+                    description = <"*">
+
+                >
+                ["at0011"] = <
+                    text = <"Undersøkelse ferdig">
+                    description = <"*">
+
+                >
+                ["at0012"] = <
+                    text = <"Dokumentert">
+                    description = <"*">
+
+                >
+                ["at0013"] = <
+                    text = <"Beskrivelse sendt">
+                    description = <"*">
+
+                >
+                ["at0014"] = <
+                    text = <"Nye undersøkelser påkrevd">
+                    description = <"*">
+
+                >
+                ["at0015"] = <
+                    text = <"Ferdig">
+                    description = <"*">
+
+                >
+                ["at0016"] = <
+                    text = <"Kommentar">
+                    description = <"*">
+
+                >
+            >
+        >
+        ["nb"] = <
+            items = <
+                ["at0000"] = <
+                    text = <"Radiologi aktivitet">
+                    description = <"Dokumentasjon av radiologi aktivitet ved Skadelegevakt">
+
+                >
+                ["at0001"] = <
+                    text = <"Tree">
+                    description = <"@ internal @">
+
+                >
+                ["at0002"] = <
+                    text = <"Kliniske opplysninger">
+                    description = <"*">
+
+                >
+                ["at0003"] = <
+                    text = <"Prosedyre">
+                    description = <"*">
+
+                >
+                ["at0004"] = <
+                    text = <"Utført tid">
+                    description = <"*">
+
+                >
+                ["at0005"] = <
+                    text = <"Ønsket tid">
+                    description = <"*">
+
+                >
+                ["at0006"] = <
+                    text = <"Planlagt">
+                    description = <"*">
+
+                >
+                ["at0007"] = <
+                    text = <"Utsatt">
+                    description = <"*">
+
+                >
+                ["at0008"] = <
+                    text = <"Kansellert">
+                    description = <"*">
+
+                >
+                ["at0009"] = <
+                    text = <"Avbrutt">
+                    description = <"*">
+
+                >
+                ["at0010"] = <
+                    text = <"Påbegynt">
+                    description = <"*">
+
+                >
+                ["at0011"] = <
+                    text = <"Undersøkelse ferdig">
+                    description = <"*">
+
+                >
+                ["at0012"] = <
+                    text = <"Dokumentert">
+                    description = <"*">
+
+                >
+                ["at0013"] = <
+                    text = <"Beskrivelse sendt">
+                    description = <"*">
+
+                >
+                ["at0014"] = <
+                    text = <"Nye undersøkelser påkrevd">
+                    description = <"*">
+
+                >
+                ["at0015"] = <
+                    text = <"Ferdig">
+                    description = <"*">
+
+                >
+                ["at0016"] = <
+                    text = <"Kommentar">
+                    description = <"*">
+
+                >
+            >
+        >
+    >
+    constraint_definitions = <
+    >
+    term_binding = <
+    >
+    constraint_binding = <
+    >

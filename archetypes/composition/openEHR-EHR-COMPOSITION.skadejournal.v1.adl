@@ -1,0 +1,69 @@
+archetype (adl_version=1.4)
+	openEHR-EHR-COMPOSITION.skadejournal.v1
+
+concept
+	[at0000]	-- Skadejournal
+language
+	original_language = <[ISO_639-1::nb]>
+	translations = <
+		["no"] = <
+			language = <[ISO_639-1::no]>
+			author = <
+				["name"] = <"?">
+			>
+		>
+	>
+description
+	original_author = <
+		["name"] = <"Bjørn Næss">
+		["organisation"] = <"DIPS ASA">
+		["email"] = <"bna@dips.no">
+		["date"] = <"2013-04-14">
+	>
+	details = <
+		["no"] = <
+			language = <[ISO_639-1::no]>
+			purpose = <"For registrering av skadejournal">
+		>
+		["nb"] = <
+			language = <[ISO_639-1::nb]>
+			purpose = <"For registrering av skadejournal">
+			use = <"For å samle informasjon som skal inn i Personskaderegistrering ">
+			misuse = <"">
+			copyright = <"">
+		>
+	>
+	lifecycle_state = <"0">
+	other_contributors = <>
+	other_details = <
+		["MD5-CAM-1.0.1"] = <"D35ED1182D0D2B91616C712956E4E299">
+	>
+
+definition
+	COMPOSITION[at0000] matches {	-- Skadejournal
+		category matches {
+			DV_CODED_TEXT matches {
+				defining_code matches {[openehr::433]}
+			}
+		}
+	}
+
+ontology
+	term_definitions = <
+		["no"] = <
+			items = <
+				["at0000"] = <
+					text = <"Skadejournal">
+					description = <"Dokument for registrering av skadejournal">
+				>
+			>
+		>
+		["nb"] = <
+			items = <
+				["at0000"] = <
+					text = <"Skadejournal">
+					description = <"Dokument for registrering av skadejournal">
+				>
+			>
+		>
+	>

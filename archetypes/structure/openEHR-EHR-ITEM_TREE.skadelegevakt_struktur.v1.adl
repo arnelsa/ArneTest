@@ -1,0 +1,350 @@
+archetype (adl_version=1.4)
+    openEHR-EHR-ITEM_TREE.skadelegevakt_struktur.v1
+
+concept
+    [at0000]
+
+language
+    original_language = <[ISO_639-1::nb]>
+    translations = <
+        ["no"] = <
+            language = <[ISO_639-1::no]>
+            author = <
+                ["name"] = <"?">
+            >
+        >
+    >
+
+description
+    original_author = <
+        ["email"] = <"bna@dips.no">
+        ["organisation"] = <"DIPS ASA">
+        ["name"] = <"Bjørn Næss">
+        ["date"] = <"2013-05-27">
+    >
+    lifecycle_state = <"0">
+    details = <
+        ["nb"] = <
+            language = <[ISO_639-1::nb]>
+            purpose = <"Struktur for bruk i INSTRUCTION og ACTION for Skadelegevakten ">
+        >
+        ["no"] = <
+            language = <[ISO_639-1::no]>
+            purpose = <"Struktur for bruk i INSTRUCTION og ACTION for Skadelegevakten ">
+        >
+    >
+
+definition
+    ITEM_TREE[at0000] occurrences matches {0..*} matches {
+        items cardinality matches {0..*; unordered} matches {
+            CLUSTER[at0028] occurrences matches {0..1} matches {
+                items cardinality matches {1..*; unordered} matches {
+                    ELEMENT[at0003] occurrences matches {0..1} matches {
+                        value matches {
+                            DV_CODED_TEXT matches {
+                                defining_code matches {
+                                    [local::
+                                    at0004,
+                                    at0005]
+                                }
+                            }
+                        }
+                    }
+                    ELEMENT[at0002] occurrences matches {0..1} matches {
+                        value matches {
+                            DV_CODED_TEXT matches {
+                                defining_code matches {
+                                    [local::
+                                    at0029,
+                                    at0030,
+                                    at0031]
+                                }
+                            }
+                        }
+                    }
+                    ELEMENT[at0016] occurrences matches {0..1} matches {
+                        value matches {
+                            DV_TEXT matches {*}
+                        }
+                    }
+                }
+            }
+            ELEMENT[at0012] occurrences matches {0..1} matches {
+                value matches {
+                    DV_TEXT matches {*}
+                }
+            }
+            ELEMENT[at0025] occurrences matches {0..1} matches {
+                value matches {
+                    DV_CODED_TEXT matches {
+                        defining_code matches {
+                            [local::
+                            at0026,
+                            at0027]
+                        }
+                    }
+                }
+            }
+            CLUSTER[at0024] occurrences matches {0..1} matches {
+                items cardinality matches {1..*; unordered} matches {
+                    ELEMENT[at0010] occurrences matches {0..1} matches {
+                        value matches {
+                            DV_TEXT matches {*}
+                        }
+                    }
+                    ELEMENT[at0023] occurrences matches {0..1} matches {
+                        value matches {
+                            DV_TEXT matches {*}
+                        }
+                    }
+                    ELEMENT[at0011] occurrences matches {0..1} matches {
+                        value matches {
+                            DV_TEXT matches {*}
+                        }
+                    }
+                }
+            }
+            CLUSTER[at0017] occurrences matches {0..1} matches {
+                items cardinality matches {1..*; unordered} matches {
+                    ELEMENT[at0019] occurrences matches {0..1} matches {
+                        value matches {
+                            DV_DATE_TIME matches {*}
+                        }
+                    }
+                    ELEMENT[at0018] occurrences matches {0..1} matches {
+                        value matches {
+                            DV_TEXT matches {*}
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+ontology
+    term_definitions = <
+        ["no"] = <
+            items = <
+                ["at0000"] = <
+                    text = <"Skadelegevakt struktur">
+                    description = <"Struktur for bruk i INSTRUCTION og ACTION for Skadelegevakten ">
+
+                >
+                ["at0002"] = <
+                    text = <"Prioritet">
+                    description = <"Angi prioritet på pasienten">
+
+                >
+                ["at0003"] = <
+                    text = <"Problem ">
+                    description = <"*">
+
+                >
+                ["at0004"] = <
+                    text = <"Sår">
+                    description = <"*">
+
+                >
+                ["at0005"] = <
+                    text = <"Brudd">
+                    description = <"*">
+
+                >
+                ["at0010"] = <
+                    text = <"Lege">
+                    description = <"*">
+
+                >
+                ["at0011"] = <
+                    text = <"Rom">
+                    description = <"*">
+
+                >
+                ["at0012"] = <
+                    text = <"Merknad">
+                    description = <"*">
+
+                >
+                ["at0016"] = <
+                    text = <"Årsak">
+                    description = <"*">
+
+                >
+                ["at0017"] = <
+                    text = <"Gipsing">
+                    description = <"*">
+
+                >
+                ["at0018"] = <
+                    text = <"Prosedyre">
+                    description = <"*">
+
+                >
+                ["at0019"] = <
+                    text = <"Utført dato">
+                    description = <"*">
+
+                >
+                ["at0023"] = <
+                    text = <"Sykepleier">
+                    description = <"Sykepleier settes på ved prioritet 1 eller 2">
+
+                >
+                ["at0024"] = <
+                    text = <"Ressurs/rom">
+                    description = <"*">
+
+                >
+                ["at0025"] = <
+                    text = <"Ankomst">
+                    description = <"*">
+
+                >
+                ["at0026"] = <
+                    text = <"EHJ">
+                    description = <"Ved egen hjelp">
+
+                >
+                ["at0027"] = <
+                    text = <"AMK">
+                    description = <"Med ambulanse">
+
+                >
+                ["at0028"] = <
+                    text = <"Klinisk vurdering">
+                    description = <"*">
+
+                >
+                ["at0029"] = <
+                    text = <"1">
+                    description = <"Prioritet 1">
+
+                >
+                ["at0030"] = <
+                    text = <"2">
+                    description = <"Prioritet 2">
+
+                >
+                ["at0031"] = <
+                    text = <"3">
+                    description = <"Prioritet 3">
+
+                >
+            >
+        >
+        ["nb"] = <
+            items = <
+                ["at0000"] = <
+                    text = <"Skadelegevakt struktur">
+                    description = <"Struktur for bruk i INSTRUCTION og ACTION for Skadelegevakten ">
+
+                >
+                ["at0002"] = <
+                    text = <"Prioritet">
+                    description = <"Angi prioritet på pasienten">
+
+                >
+                ["at0003"] = <
+                    text = <"Problem ">
+                    description = <"*">
+
+                >
+                ["at0004"] = <
+                    text = <"Sår">
+                    description = <"*">
+
+                >
+                ["at0005"] = <
+                    text = <"Brudd">
+                    description = <"*">
+
+                >
+                ["at0010"] = <
+                    text = <"Lege">
+                    description = <"*">
+
+                >
+                ["at0011"] = <
+                    text = <"Rom">
+                    description = <"*">
+
+                >
+                ["at0012"] = <
+                    text = <"Merknad">
+                    description = <"*">
+
+                >
+                ["at0016"] = <
+                    text = <"Årsak">
+                    description = <"*">
+
+                >
+                ["at0017"] = <
+                    text = <"Gipsing">
+                    description = <"*">
+
+                >
+                ["at0018"] = <
+                    text = <"Prosedyre">
+                    description = <"*">
+
+                >
+                ["at0019"] = <
+                    text = <"Utført dato">
+                    description = <"*">
+
+                >
+                ["at0023"] = <
+                    text = <"Sykepleier">
+                    description = <"Sykepleier settes på ved prioritet 1 eller 2">
+
+                >
+                ["at0024"] = <
+                    text = <"Ressurs/rom">
+                    description = <"*">
+
+                >
+                ["at0025"] = <
+                    text = <"Ankomst">
+                    description = <"*">
+
+                >
+                ["at0026"] = <
+                    text = <"EHJ">
+                    description = <"Ved egen hjelp">
+
+                >
+                ["at0027"] = <
+                    text = <"AMK">
+                    description = <"Med ambulanse">
+
+                >
+                ["at0028"] = <
+                    text = <"Klinisk vurdering">
+                    description = <"*">
+
+                >
+                ["at0029"] = <
+                    text = <"1">
+                    description = <"Prioritet 1">
+
+                >
+                ["at0030"] = <
+                    text = <"2">
+                    description = <"Prioritet 2">
+
+                >
+                ["at0031"] = <
+                    text = <"3">
+                    description = <"Prioritet 3">
+
+                >
+            >
+        >
+    >
+    constraint_definitions = <
+    >
+    term_binding = <
+    >
+    constraint_binding = <
+    >

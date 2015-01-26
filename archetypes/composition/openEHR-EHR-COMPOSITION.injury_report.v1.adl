@@ -1,0 +1,66 @@
+archetype (adl_version=1.4)
+    openEHR-EHR-COMPOSITION.injury_report.v1
+
+concept
+    [at0000]
+
+language
+    original_language = <[ISO_639-1::nb]>
+
+description
+    original_author = <
+        ["date"] = <"2015-01-21">
+        ["name"] = <"Bjørn Næss">
+        ["organisation"] = <"DIPS ASA">
+        ["email"] = <"bna@dips.no">
+    >
+    lifecycle_state = <"0">
+    details = <
+        ["nb"] = <
+            language = <[ISO_639-1::nb]>
+            purpose = <"Registrering og rapportering av personskade. ">
+        >
+        ["no"] = <
+            language = <[ISO_639-1::no]>
+            purpose = <"Registrering og rapportering av personskade. ">
+        >
+    >
+
+definition
+    COMPOSITION[at0000] matches {
+        category matches {
+            DV_CODED_TEXT matches {
+                defining_code matches {
+                    [openehr::433]
+                }
+            }
+        }
+    }
+
+ontology
+    term_definitions = <
+        ["no"] = <
+            items = <
+                ["at0000"] = <
+                    text = <"Personskaderapport">
+                    description = <"Registrering og rapportering av personskade. ">
+
+                >
+            >
+        >
+        ["nb"] = <
+            items = <
+                ["at0000"] = <
+                    text = <"Personskaderapport">
+                    description = <"Registrering og rapportering av personskade. ">
+
+                >
+            >
+        >
+    >
+    constraint_definitions = <
+    >
+    term_binding = <
+    >
+    constraint_binding = <
+    >
