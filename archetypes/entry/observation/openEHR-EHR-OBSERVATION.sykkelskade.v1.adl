@@ -39,7 +39,7 @@ description
 	lifecycle_state = <"0">
 	other_contributors = <>
 	other_details = <
-		["MD5-CAM-1.0.1"] = <"3CBDEE897F4428F79A506BC64E936599">
+		["MD5-CAM-1.0.1"] = <"F22027B217CE2DB77F2A1CAF10D20C7A">
 	>
 
 definition
@@ -267,8 +267,8 @@ ontology
 		["no"] = <
 			items = <
 				["at0000"] = <
-					text = <"Sykkelskade">
-					description = <"For dybdestudie av sykkelskader">
+					text = <"*Sykkelskade(nb)">
+					description = <"*For dybdestudie av sykkelskader. Til bruk på SKLV (nb)">
 				>
 				["at0001"] = <
 					text = <"Event Series">
@@ -536,7 +536,7 @@ ontology
 			items = <
 				["at0000"] = <
 					text = <"Sykkelskade">
-					description = <"For dybdestudie av sykkelskader">
+					description = <"For dybdestudie av sykkelskader. Til bruk på SKLV ">
 				>
 				["at0001"] = <
 					text = <"Event Series">
