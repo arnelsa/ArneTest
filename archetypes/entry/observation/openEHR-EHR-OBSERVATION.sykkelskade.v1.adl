@@ -24,6 +24,9 @@ description
 		["no"] = <
 			language = <[ISO_639-1::no]>
 			purpose = <"For dybdestudie av sykkelskader">
+			use = <"">
+			misuse = <"">
+			copyright = <"">
 		>
 		["nb"] = <
 			language = <[ISO_639-1::nb]>
@@ -36,7 +39,7 @@ description
 	lifecycle_state = <"0">
 	other_contributors = <>
 	other_details = <
-		["MD5-CAM-1.0.1"] = <"5C78C53C713B1E75E2C91F3F0A694452">
+		["MD5-CAM-1.0.1"] = <"3CBDEE897F4428F79A506BC64E936599">
 	>
 
 definition
@@ -281,7 +284,7 @@ ontology
 				>
 				["at0004"] = <
 					text = <"Skadested">
-					description = <"*">
+					description = <"Skadested definerer hvor ulykken inntraff">
 				>
 				["at0005"] = <
 					text = <"Bilvei blandet med trafikk">
@@ -549,7 +552,7 @@ ontology
 				>
 				["at0004"] = <
 					text = <"Skadested">
-					description = <"*">
+					description = <"Skadested definerer hvor ulykken inntraff">
 				>
 				["at0005"] = <
 					text = <"Bilvei blandet med trafikk">
